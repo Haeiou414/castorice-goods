@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>崩坏：星穹铁道遐蝶周边</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 25px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #ffd43b;
+        }
+        
+        .page-title {
+            text-align: center;
+            margin: 30px 0;
+            color: #2d3436;
+            font-size: 32px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .page-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            border-radius: 2px;
+        }
+        
+        .excel-data-section {
+	    display: none;
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .excel-data-section h2 {
+            margin-bottom: 20px;
+            color: #2d3436;
+            display: flex;
+            align-items: center;
+        }
+        
+        .excel-data-section h2 i {
+            margin-right: 10px;
+            color: #6a11cb;
+        }
+        
+        .instructions {
+            background: #f8f9fa;
+            border-left: 4px solid #6a11cb;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .instructions ol {
+            padding-left: 20px;
+        }
+        
+        .instructions li {
+            margin-bottom: 8px;
+        }
+        
+        .excel-data {
+            width: 100%;
+            min-height: 150px;
+            padding: 15px;
+            border: 2px dashed #6a11cb;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-family: monospace;
+            white-space: pre;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            background: #6a11cb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #2575fc;
+        }
+        
+        .btn i {
+            margin-right: 8px;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-image {
+            width: 100%;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+            position: relative;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+        
+        .product-info {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .product-name {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #2d3436;
+        }
+        
+        .product-price {
+            font-size: 22px;
+            color: #e84118;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .product-details {
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            margin-top: auto;
+        }
+        
+        .detail-item {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        
+        .detail-label {
+            font-weight: 600;
+            min-width: 60px;
+            color: #636e72;
+        }
+        
+        .detail-value {
+            flex: 1;
+            color: #2d3436;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #636e72;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-links {
+                margin-top: 20px;
+                justify-content: center;
+            }
+            
+            .nav-links li {
+                margin: 0 10px;
+            }
+            
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span>崩坏：星穹铁道遐蝶周边</span>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="https://sr.mihoyo.com">官网</a></li>
+                    <li><a href="https://space.bilibili.com/1340190821/dynamic?spm_id_from=333.1365.list.card_avatar.click">B站</a></li>
+                    <li><a href="https://www.miyoushe.com/sr/">米游社</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">        
+        <div class="excel-data-section">
+            <h2><i class="fas fa-table"></i>Excel数据区域</h2>
+            
+            <div class="instructions">
+                <p><strong>使用说明：</strong></p>
+                <ol>
+                    <li>在Excel中选中您的商品数据（包括表头）</li>
+                    <li>按下Ctrl+C复制选中的数据</li>
+                    <li>将数据粘贴到下方的文本框中</li>
+                    <li>点击"生成商品展示"按钮</li>
+                    <li>将文本框中的内容复制到HTML源代码的相应位置</li>
+                </ol>
+                <p><strong>数据格式要求：</strong> 请确保Excel列顺序为：商品名称, 价格, 材质, 工艺, 尺寸, 图片文件名</p>
+            </div>
+            
+            <textarea class="excel-data" id="excel-data-input">
+商品名称	价格	材质	工艺	尺寸	图片文件名
+翁法罗斯英雄纪系列马口铁徽章	15	马口铁	PET印刷+拉丝垫纸	约70×43mm	25012601.webp
+翁法罗斯英雄纪系列镭射收藏卡	10	纸	银卡底纸+局部逆向	约125×70mm	25012602.webp
+翁法罗斯英雄纪系列亚克力摆件	48	亚克力	PET双层印刷+镭射烫印	约70×110×15mm	25012603.webp
+立绘系列马口铁徽章	18	马口铁	PET印刷+幻彩白沙闪底+印金	直径约75mm	25043001.webp
+立绘系列亚克力立牌	58	亚克力	柯氏印刷	约248×192mm	25043002.webp
+立绘系列亚克力挂件	32	亚克力	柯氏印刷+印金	约90×46.6mm	25043003.webp
+光锥系列马口铁徽章	15	马口铁	PET印刷+拉丝银葱闪底+局部印镭射银	约7×4cm	25043004.webp
+光锥系列亚克力色纸	48	2mm厚亚克力+纸板	柯式印刷+拉丝银葱闪底+可立支架	约145×215mm	25043005.webp
+光锥系列亚克力流沙立牌	68	亚克力	流沙工艺+烫印	本体约75×150×10mm，底座约76×42×5mm	25043006.webp
+光锥系列亚克力挂件	28	亚克力	柯氏印刷（火焰镭射）	约93×65mm	25043007.webp
+帕姆展览馆系列Q版本贴纸包	15	PET透明贴纸	单枚异形模切	单枚约3cm	25043008.webp
+立绘系列拍立得（满赠）	9999	纸	烫金+UV	约76×120mm	25043009.webp
+光锥系列卡片（满赠）	9999	纸		约76×120mm	25043010.webp
+宇宙糖果屋系列马口铁徽章	15	马口铁	PET印刷+幻彩白沙闪底	约58mm	25053101.webp
+宇宙糖果屋系列亚克力摆件	48	亚克力	PET双层印刷	约100×100×10mm	25053102.webp
+宇宙糖果屋系列PET色纸	35	PET闪底垫纸	PET印刷+幻彩白沙垫纸	约150×150mm	25053103.webp
+遐蝶力反馈精英手柄	799	金属徽章：锌合金	金属徽章：仿珐琅、闪粉	金属徽章：约65×64mm	25061101.webp
+遐蝶力反馈精英手柄+充电底座	899	金属徽章：锌合金	金属徽章：仿珐琅、闪粉	金属徽章：约65×64mm	25061102.webp
+星铁LIVE系列马口铁徽章	15	马口铁	镭射垫纸	约58mm	25061103.webp
+星铁LIVE系列亚克力立牌	48	亚克力	局部烫金	约157×124mm	25061104.webp
+星铁LIVE系列亚克力挂件	28	亚克力	柯氏印刷	约87×50mm	25061105.webp
+星铁LIVE系列镭射票	10	纸	局部逆向+局部烫金	约78×210mm	25061106.webp
+星铁LIVE系列亚克力流沙摆件	40	亚克力	流沙工艺+烫印	约100×65mm	25061107.webp
+星铁LIVE系列PET色纸	35	纸、PET	PET印刷+七彩紫罗兰垫纸、烫镭射银	约145×256mm	25061108.webp
+星铁LIVE系列纪念礼盒	198	亚克力	局部印金	仿唱片亚克力直径约130mm	25061109.webp
+星铁LIVE系列仿胶片卡（满赠）	9999	纸+PET	银卡纸印刷	约72×120mm	25061110.webp
+遐蝶1/8手办 星铁LIVEver.	269	PVC&ABS	涂装	宽约10.3cm、长约19.2cm、高约18.7cm	25072301.webp
+遐蝶1/8手办展示盒普通版	149	亚克力		内径约：222×150×228mm，外径约：232×160×253mm	25072302.webp
+遐蝶1/8手办展示盒豪华版	199	亚克力、LED灯		内径约：222×150×228mm，外径约：232×160×278mm	25072303.webp
+嗷呜嗷呜系列迷你盲袋	69	PVC	肤感漆	高约3.2cm~4.2cm	25072304.webp
+嗷呜嗷呜系列毛绒玩偶	109	面料：100%聚酯纤维，填充物：100%聚酯纤维、金属片、PVC	刺绣、转印	约25×15cm	25072305.webp
+帕姆展览馆系列金属徽章	38	锌合金	局部印刷+局部闪粉+局部抛光	配件：约14×14mm，链条：约80mm	25072306.webp
+            </textarea>
+            
+            <button class="btn" id="generate-btn">
+                <i class="fas fa-magic"></i>生成商品展示
+            </button>
+        </div>
+        
+        <div class="products-grid" id="products-container">
+            <!-- 商品卡片将在这里动态生成 -->
+            <div class="placeholder" style="text-align: center; grid-column: 1 / -1; padding: 40px; color: #636e72;">
+                <i class="fas fa-box-open" style="font-size: 48px; margin-bottom: 15px;"></i>
+                <p>请点击"生成商品展示"按钮显示商品</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>冰消雪释时，花会盛开，你会找到我	</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const generateBtn = document.getElementById('generate-btn');
+            const excelDataInput = document.getElementById('excel-data-input');
+            const productsContainer = document.getElementById('products-container');
+            
+            // 初始时自动生成一次
+            generateProducts();
+            
+            generateBtn.addEventListener('click', function() {
+                generateProducts();
+            });
+            
+            function generateProducts() {
+                // 获取Excel数据
+                const excelData = excelDataInput.value.trim();
+                
+                if (!excelData) {
+                    alert('请先粘贴Excel数据！');
+                    return;
+                }
+                
+                // 解析数据
+                const rows = excelData.split(/\r?\n/);
+                const products = [];
+                
+                // 跳过表头（从第二行开始）
+                for (let i = 1; i < rows.length; i++) {
+                    const cells = rows[i].split('\t');
+                    
+                    if (cells.length >= 6) {
+                        products.push({
+                            name: cells[0],
+                            price: cells[1],
+                            material: cells[2],
+                            craft: cells[3],
+                            size: cells[4],
+                            image: cells[5]
+                        });
+                    }
+                }
+                
+                // 清空容器
+                productsContainer.innerHTML = '';
+                
+                // 生成商品卡片
+                if (products.length > 0) {
+                    products.forEach(product => {
+                        const productCard = document.createElement('div');
+                        productCard.className = 'product-card';
+                        
+                        productCard.innerHTML = `
+                            <div class="product-image">
+                                <img src="img/${product.image}" alt="${product.name}">
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-name">${product.name}</h2>
+                                <div class="product-price">¥ ${product.price}</div>
+                                <div class="product-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">材质:</span>
+                                        <span class="detail-value">${product.material}</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">工艺:</span>
+                                        <span class="detail-value">${product.craft}</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">尺寸:</span>
+                                        <span class="detail-value">${product.size}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        
+                        productsContainer.appendChild(productCard);
+                    });
+                } else {
+                    productsContainer.innerHTML = `
+                        <div class="placeholder" style="text-align: center; grid-column: 1 / -1; padding: 40px; color: #e84118;">
+                            <i class="fas fa-exclamation-triangle" style="font-size: 48px; margin-bottom: 15px;"></i>
+                            <p>未能解析出有效数据，请检查数据格式</p>
+                        </div>
+                    `;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
