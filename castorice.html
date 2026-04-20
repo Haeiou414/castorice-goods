@@ -4,17 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>崩坏：星穹铁道遐蝶周边</title>
-<<<<<<< HEAD
-=======
-    <meta name="description" content="崩坏：星穹铁道遐蝶系列官方周边展示，含价格、材质、工艺、尺寸与高清图片。支持搜索与排序。">
-    <meta name="keywords" content="崩坏 星穹铁道 遐蝶 周边 手办 徽章 亚克力 立牌">
-    <meta name="author" content="Castorice">
-    <meta property="og:title" content="崩坏：星穹铁道遐蝶周边">
-    <meta property="og:description" content="遐蝶系列周边清单，支持搜索筛选与排序。">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="zh_CN">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%236a11cb'/%3E%3Ctext x='50' y='60' font-size='48' text-anchor='middle' fill='white'%3E☆%3C/text%3E%3C/svg%3E">
->>>>>>> 2993d239eeeeedb4dbe8a5c5df854f62f5dd23b3
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -171,86 +160,13 @@
             margin-right: 8px;
         }
         
-<<<<<<< HEAD
-=======
-        .toolbar {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-            flex-wrap: wrap;
-            margin: 10px 0 10px;
-        }
-
-        .toolbar .input,
-        .toolbar .select {
-            padding: 10px 12px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            background: #fff;
-            min-width: 220px;
-            font-size: 14px;
-        }
-
-        .toolbar .select[multiple] {
-            min-width: 260px;
-            max-height: 120px;
-            overflow: auto;
-        }
-
-        .toolbar .range-group {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .toolbar .btn-ghost {
-            padding: 10px 14px;
-            background: transparent;
-            color: #6a11cb;
-            border: 1px solid #6a11cb;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 600;
-        }
-        
->>>>>>> 2993d239eeeeedb4dbe8a5c5df854f62f5dd23b3
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 30px;
             margin-top: 40px;
         }
-<<<<<<< HEAD
-=======
-
-        /* 美学优化：顶栏与折叠筛选面板 */
-        .topbar {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 6px 0 8px;
-        }
-        .topbar-left, .topbar-right { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-        .filter-panel {
-            background: #ffffff;
-            border: 1px solid #eee;
-            border-radius: 10px;
-            padding: 12px;
-            margin: 6px 0 6px;
-            display: none;
-        }
-        .filter-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 12px 16px;
-        }
-        .filter-section h4 { font-size: 14px; color: #555; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
-        .filter-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
->>>>>>> 2993d239eeeeedb4dbe8a5c5df854f62f5dd23b3
-        
+		
         .product-card {
             background: white;
             border-radius: 12px;
@@ -337,33 +253,6 @@
             color: #636e72;
             font-size: 14px;
         }
-<<<<<<< HEAD
-=======
-
-        /* 深色模式（覆盖主要背景与卡片） */
-        .theme-dark body,
-        body.theme-dark {
-            background-color: #0f1115;
-            color: #e6e6e6;
-        }
-        body.theme-dark header {
-            background: linear-gradient(135deg, #4d089a 0%, #1e5bd9 100%);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-        }
-        body.theme-dark .excel-data-section,
-        body.theme-dark .product-card,
-        body.theme-dark .toolbar .input,
-        body.theme-dark .toolbar .select,
-        body.theme-dark .filter-panel {
-            background: #171a21;
-            color: #e6e6e6;
-            border-color: #2a2f3a;
-        }
-        body.theme-dark .product-details { border-top-color: #2a2f3a; }
-        body.theme-dark .detail-label { color: #c0c6d1; }
-        body.theme-dark .btn-ghost { color: #cdb6ff; border-color: #6a11cb; }
-        body.theme-dark .placeholder { color: #9aa4b2 !important; }
->>>>>>> 2993d239eeeeedb4dbe8a5c5df854f62f5dd23b3
         
         @media (max-width: 768px) {
             .header-content {
@@ -404,67 +293,6 @@
     </header>
     
     <div class="container">        
-<<<<<<< HEAD
-=======
-        <div class="topbar">
-            <div class="topbar-left">
-                <input class="input" id="search-input" type="search" placeholder="搜索：名称/材质/工艺" aria-label="搜索商品">
-                <select class="select" id="sort-select" aria-label="排序">
-                    <option value="default">默认排序</option>
-                    <option value="price-asc">价格从低到高</option>
-                    <option value="price-desc">价格从高到低</option>
-                    <option value="name-asc">名称 A → Z</option>
-                    <option value="name-desc">名称 Z → A</option>
-                </select>
-                <button class="btn-ghost" id="toggle-filter-panel"><i class="fas fa-sliders"></i>筛选</button>
-            </div>
-            <div class="topbar-right">
-                <div id="result-count" aria-live="polite"></div>
-                <button class="btn-ghost" id="export-csv-btn"><i class="fas fa-file-csv"></i>CSV</button>
-                <button class="btn-ghost" id="export-json-btn"><i class="fas fa-file-code"></i>JSON</button>
-                <button class="btn-ghost" id="copy-link-btn"><i class="fas fa-link"></i>复制链接</button>
-                <button class="btn" id="toggle-theme-btn"><i class="fas fa-moon"></i>深色</button>
-                <button class="btn" id="toggle-excel-btn"><i class="fas fa-eye"></i>Excel</button>
-            </div>
-        </div>
-        <div class="filter-panel" id="filter-panel">
-            <div class="filter-grid">
-                <div class="filter-section">
-                    <h4><i class="fas fa-boxes-stacked"></i> 材质</h4>
-                    <select class="select" id="materials-select" multiple aria-label="材质筛选（可多选）" title="按住Ctrl/⌘多选"></select>
-                </div>
-                <div class="filter-section">
-                    <h4><i class="fas fa-industry"></i> 工艺</h4>
-                    <select class="select" id="crafts-select" multiple aria-label="工艺（可多选）"></select>
-                </div>
-                <div class="filter-section">
-                    <h4><i class="fas fa-layer-group"></i> 系列</h4>
-                    <select class="select" id="series-select" multiple aria-label="系列（可多选）"></select>
-                </div>
-                <div class="filter-section">
-                    <h4><i class="fas fa-yen-sign"></i> 价格区间</h4>
-                    <div class="range-group">
-                        <input class="input" id="price-min" type="number" min="0" step="0.1" placeholder="最低价">
-                        <span>—</span>
-                        <input class="input" id="price-max" type="number" min="0" step="0.1" placeholder="最高价">
-                    </div>
-                    <div class="range-group" aria-label="价格滑块" style="margin-top:6px">
-                        <input id="price-min-range" type="range" min="0" max="1000" step="1" value="0" style="width:160px">
-                        <input id="price-max-range" type="range" min="0" max="1000" step="1" value="1000" style="width:160px">
-                    </div>
-                </div>
-                <div class="filter-section">
-                    <h4><i class="fas fa-star"></i> 预设</h4>
-                    <select class="select" id="preset-select" aria-label="加载预设"></select>
-                    <div class="filter-actions">
-                        <button class="btn-ghost" id="save-preset-btn"><i class="fas fa-save"></i>保存预设</button>
-                        <button class="btn-ghost" id="delete-preset-btn"><i class="fas fa-trash"></i>删除预设</button>
-                        <button class="btn-ghost" id="reset-filters-btn"><i class="fas fa-rotate-left"></i>重置筛选</button>
-                    </div>
-                </div>
-            </div>
-        </div>
->>>>>>> 2993d239eeeeedb4dbe8a5c5df854f62f5dd23b3
         <div class="excel-data-section">
             <h2><i class="fas fa-table"></i>Excel数据区域</h2>
             
@@ -486,7 +314,6 @@
 翁法罗斯英雄纪系列镭射收藏卡	10	纸	银卡底纸+局部逆向	约125×70mm	25012602.webp
 翁法罗斯英雄纪系列亚克力摆件	48	亚克力	PET双层印刷+镭射烫印	约70×110×15mm	25012603.webp
 立绘系列马口铁徽章	18	马口铁	PET印刷+幻彩白沙闪底+印金	直径约75mm	25043001.webp
-<<<<<<< HEAD
 立绘系列亚克力立牌	58	亚克力	柯式印刷	约248×192mm	25043002.webp
 立绘系列亚克力挂件	32	亚克力	柯式印刷+印金	约90×46.6mm	25043003.webp
 光锥系列马口铁徽章	15	马口铁	PET印刷+拉丝银葱闪底+局部印镭射银	约7×4cm	25043004.webp
@@ -496,17 +323,6 @@
 帕姆展览馆系列Q版本贴纸包	15	PET透明贴纸	单枚异形模切	单枚约3cm	25043008.webp
 立绘系列拍立得（满赠）	0	纸	烫金+UV	约76×120mm	25043009.webp
 光锥系列卡片（满赠）	0	纸		约76×120mm	25043010.webp
-=======
-立绘系列亚克力立牌	58	亚克力	柯氏印刷	约248×192mm	25043002.webp
-立绘系列亚克力挂件	32	亚克力	柯氏印刷+印金	约90×46.6mm	25043003.webp
-光锥系列马口铁徽章	15	马口铁	PET印刷+拉丝银葱闪底+局部印镭射银	约7×4cm	25043004.webp
-光锥系列亚克力色纸	48	2mm厚亚克力+纸板	柯式印刷+拉丝银葱闪底+可立支架	约145×215mm	25043005.webp
-光锥系列亚克力流沙立牌	68	亚克力	流沙工艺+烫印	本体约75×150×10mm，底座约76×42×5mm	25043006.webp
-光锥系列亚克力挂件	28	亚克力	柯氏印刷（火焰镭射）	约93×65mm	25043007.webp
-帕姆展览馆系列Q版本贴纸包	15	PET透明贴纸	单枚异形模切	单枚约3cm	25043008.webp
-立绘系列拍立得（满赠）	9999	纸	烫金+UV	约76×120mm	25043009.webp
-光锥系列卡片（满赠）	9999	纸		约76×120mm	25043010.webp
->>>>>>> 2993d239eeeeedb4dbe8a5c5df854f62f5dd23b3
 宇宙糖果屋系列马口铁徽章	15	马口铁	PET印刷+幻彩白沙闪底	约58mm	25053101.webp
 宇宙糖果屋系列亚克力摆件	48	亚克力	PET双层印刷	约100×100×10mm	25053102.webp
 宇宙糖果屋系列PET色纸	35	PET闪底垫纸	PET印刷+幻彩白沙垫纸	约150×150mm	25053103.webp
@@ -514,20 +330,12 @@
 遐蝶力反馈精英手柄+充电底座	899	金属徽章：锌合金	金属徽章：仿珐琅、闪粉	金属徽章：约65×64mm	25061102.webp
 星铁LIVE系列马口铁徽章	15	马口铁	镭射垫纸	约58mm	25061103.webp
 星铁LIVE系列亚克力立牌	48	亚克力	局部烫金	约157×124mm	25061104.webp
-<<<<<<< HEAD
 星铁LIVE系列亚克力挂件	28	亚克力	柯式印刷	约87×50mm	25061105.webp
-=======
-星铁LIVE系列亚克力挂件	28	亚克力	柯氏印刷	约87×50mm	25061105.webp
->>>>>>> 2993d239eeeeedb4dbe8a5c5df854f62f5dd23b3
 星铁LIVE系列镭射票	10	纸	局部逆向+局部烫金	约78×210mm	25061106.webp
 星铁LIVE系列亚克力流沙摆件	40	亚克力	流沙工艺+烫印	约100×65mm	25061107.webp
 星铁LIVE系列PET色纸	35	纸、PET	PET印刷+七彩紫罗兰垫纸、烫镭射银	约145×256mm	25061108.webp
 星铁LIVE系列纪念礼盒	198	亚克力	局部印金	仿唱片亚克力直径约130mm	25061109.webp
-<<<<<<< HEAD
 星铁LIVE系列仿胶片卡（满赠）	0	纸+PET	银卡纸印刷	约72×120mm	25061110.webp
-=======
-星铁LIVE系列仿胶片卡（满赠）	9999	纸+PET	银卡纸印刷	约72×120mm	25061110.webp
->>>>>>> 2993d239eeeeedb4dbe8a5c5df854f62f5dd23b3
 遐蝶1/8手办 星铁LIVEver.	269	PVC&ABS	涂装	宽约10.3cm、长约19.2cm、高约18.7cm	25072301.webp
 遐蝶1/8手办展示盒普通版	149	亚克力		内径约：222×150×228mm，外径约：232×160×253mm	25072302.webp
 遐蝶1/8手办展示盒豪华版	199	亚克力、LED灯		内径约：222×150×228mm，外径约：232×160×278mm	25072303.webp
@@ -535,13 +343,8 @@
 嗷呜嗷呜系列毛绒玩偶	109	面料：100%聚酯纤维，填充物：100%聚酯纤维、金属片、PVC	刺绣、转印	约25×15cm	25072305.webp
 帕姆展览馆系列金属徽章	38	锌合金	局部印刷+局部闪粉+局部抛光	约31×38mm，配件：约14×14mm，链条：约80mm	25072306.webp
 与你同行的回忆系列马口铁徽章	15	马口铁	烫立体镭射银	约70×43mm	25090301.webp
-<<<<<<< HEAD
 与你同行的回忆系列亚克力立牌第二弹	48	亚克力	柯式印刷+印金	约121×88mm	25090302.webp
 与你同行的回忆系列亚克力立牌第二弹	48	亚克力	柯式印刷+印金	约121×88mm	25090303.webp
-=======
-与你同行的回忆系列亚克力立牌	48	亚克力	柯氏印刷+印金	约121×88mm	25090302.webp
-与你同行的回忆系列亚克力立牌	48	亚克力	柯氏印刷+印金	约121×88mm	25090303.webp
->>>>>>> 2993d239eeeeedb4dbe8a5c5df854f62f5dd23b3
 与你同行的回忆系列仿胶片卡	19.9	PET+纸	印金	约150×85mm	25090304.webp
 与你同行的回忆系列仿胶片卡	19.9	PET+纸	印金	约150×85mm	25090305.webp
 与你同行的回忆系列仿胶片卡	19.9	PET+纸	印金	约150×85mm	25090306.webp
@@ -551,7 +354,6 @@
 与你同行的回忆系列PET色纸	35	纸+PET	PET+垫纸+印金	约256×146mm	25090310.webp
 帕姆展览馆系列方型马口铁徽章	15	马口铁	PET印刷+镭射垫纸	约50×50mm	25090311.webp
 帕姆展览馆系列亚克力挂件	28	亚克力	双面印刷+反面高透素面镭射膜	约65×50mm	25090312.webp
-<<<<<<< HEAD
 帕姆展览馆系列流沙亚克力冰箱贴	32	亚克力	柯式印刷+流沙	约60×60mm	25090313.webp
 帕姆展览馆系列软磁书签套组	20	纸、软磁	镭射覆膜	约36×38mm、35×43mm	25090314.webp
 帕姆展览馆系列Q版本贴纸包	15	PET透明贴纸	单枚异形模切	单枚约3cm	25090315.webp
@@ -609,11 +411,6 @@ Q版娃娃系列金属徽章	48	金属	仿珐琅+局部闪粉+局部印刷	约45
 小不点猫猫系列收藏卡	10	纸	双面印刷+局部逆向	约120×76mm	26041507.webp
 小不点猫猫系列方形抱枕	35	100%聚酯纤维	印刷	约45×45cm	26041508.webp
 小不点猫猫系列Q版马口铁徽章套组第七弹	0	马口铁	PET印刷+闪底垫纸	约38mm	26041509.webp
-=======
-帕姆展览馆系列流沙亚克力冰箱贴	32	亚克力	柯氏印刷+流沙	约60×60mm	25090313.webp
-帕姆展览馆系列软磁书签套组	20	纸、软磁	镭射覆膜	约36×38mm、35×43mm	25090314.webp
-帕姆展览馆系列Q版本贴纸包	15	PET透明贴纸	单枚异形模切	单枚约3cm	25090315.webp
->>>>>>> 2993d239eeeeedb4dbe8a5c5df854f62f5dd23b3
             </textarea>
             
             <button class="btn" id="generate-btn">
@@ -641,7 +438,6 @@ Q版娃娃系列金属徽章	48	金属	仿珐琅+局部闪粉+局部印刷	约45
             const generateBtn = document.getElementById('generate-btn');
             const excelDataInput = document.getElementById('excel-data-input');
             const productsContainer = document.getElementById('products-container');
-<<<<<<< HEAD
             
             // 初始时自动生成一次
             generateProducts();
@@ -653,199 +449,11 @@ Q版娃娃系列金属徽章	48	金属	仿珐琅+局部闪粉+局部印刷	约45
             function generateProducts() {
                 // 获取Excel数据
                 const excelData = excelDataInput.value.trim();
-                
-=======
-            const searchInput = document.getElementById('search-input');
-            const sortSelect = document.getElementById('sort-select');
-            const toggleExcelBtn = document.getElementById('toggle-excel-btn');
-            const excelSection = document.querySelector('.excel-data-section');
-            const materialsSelect = document.getElementById('materials-select');
-            const priceMinInput = document.getElementById('price-min');
-            const priceMaxInput = document.getElementById('price-max');
-            const exportCsvBtn = document.getElementById('export-csv-btn');
-            const exportJsonBtn = document.getElementById('export-json-btn');
-            const toggleThemeBtn = document.getElementById('toggle-theme-btn');
-            const resultCountEl = document.getElementById('result-count');
-            const pageSizeSelect = null; // 移除分页，使用无限滚动
-            const prevPageBtn = null;
-            const nextPageBtn = null;
-            const pageInfoEl = null;
-            const priceMinRange = document.getElementById('price-min-range');
-            const priceMaxRange = document.getElementById('price-max-range');
-            const presetSelect = document.getElementById('preset-select');
-            const savePresetBtn = document.getElementById('save-preset-btn');
-            const deletePresetBtn = document.getElementById('delete-preset-btn');
-            const resetFiltersBtn = document.getElementById('reset-filters-btn');
-            const copyLinkBtn = document.getElementById('copy-link-btn');
-            const toggleFilterPanelBtn = document.getElementById('toggle-filter-panel');
-            const filterPanel = document.getElementById('filter-panel');
-            const craftsSelect = document.getElementById('crafts-select');
-            const seriesSelect = document.getElementById('series-select');
-
-            let allProducts = [];
-            let lastRendered = [];
-            let pageSize = 24; // 用作无限滚动的批大小
-            let infiniteCursor = 0;
-            let currentFiltered = [];
-
-            // 恢复本地数据与状态
-            try {
-                const savedData = localStorage.getItem('excelData');
-                const savedSearch = localStorage.getItem('searchKeyword') || '';
-                const savedSort = localStorage.getItem('sortKey') || 'default';
-                const excelVisible = localStorage.getItem('excelVisible');
-                const savedMaterials = JSON.parse(localStorage.getItem('materialsFilter') || '[]');
-                const savedPriceMin = localStorage.getItem('priceMin') || '';
-                const savedPriceMax = localStorage.getItem('priceMax') || '';
-                const savedTheme = localStorage.getItem('theme') || 'light';
-                const urlState = readUrlState();
-                if (savedData) excelDataInput.value = savedData;
-                searchInput.value = urlState.q ?? savedSearch;
-                sortSelect.value = urlState.sort ?? savedSort;
-                if (excelVisible === 'true') {
-                    excelSection.style.display = 'block';
-                    toggleExcelBtn.innerHTML = '<i class="fas fa-eye-slash"></i>隐藏 Excel 区域';
-                }
-                priceMinInput.value = urlState.min ?? savedPriceMin;
-                priceMaxInput.value = urlState.max ?? savedPriceMax;
-                // 同步滑块
-                const minV = Number(priceMinInput.value || 0), maxV = Number(priceMaxInput.value || 1000);
-                priceMinRange.value = isNaN(minV) ? 0 : Math.max(0, Math.min(1000, Math.floor(minV)));
-                priceMaxRange.value = isNaN(maxV) ? 1000 : Math.max(0, Math.min(1000, Math.ceil(maxV)));
-                if (savedTheme === 'dark') {
-                    document.body.classList.add('theme-dark');
-                    toggleThemeBtn.innerHTML = '<i class="fas fa-sun"></i>浅色模式';
-                }
-                // 暂存材料过滤，待数据加载后应用
-                materialsSelect.dataset.pending = JSON.stringify(urlState.materials?.length ? urlState.materials : savedMaterials);
-                pageSize = Number(urlState.ps || localStorage.getItem('batchSize') || pageSize);
-                if (![12,24,48,96].includes(pageSize)) pageSize = 24;
-                try { localStorage.setItem('batchSize', String(pageSize)); } catch (e) {}
-                // 载入预设列表
-                refreshPresetOptions();
-            } catch (e) {}
-
-            // 初始生成
-            generateProducts();
-            
-            // 事件绑定
-            generateBtn.addEventListener('click', function() {
-                generateProducts();
-            });
-            searchInput.addEventListener('input', renderFilteredSorted);
-            sortSelect.addEventListener('change', function() {
-                localStorage.setItem('sortKey', sortSelect.value);
-                renderFilteredSorted();
-            });
-            toggleExcelBtn.addEventListener('click', function() {
-                const showing = excelSection.style.display !== 'none';
-                if (showing) {
-                    excelSection.style.display = 'none';
-                    toggleExcelBtn.innerHTML = '<i class="fas fa-eye"></i>显示 Excel 区域';
-                    localStorage.setItem('excelVisible', 'false');
-                } else {
-                    excelSection.style.display = 'block';
-                    toggleExcelBtn.innerHTML = '<i class="fas fa-eye-slash"></i>隐藏 Excel 区域';
-                    localStorage.setItem('excelVisible', 'true');
-                }
-            });
-            materialsSelect.addEventListener('change', function() {
-                const selected = Array.from(materialsSelect.selectedOptions).map(o => o.value);
-                try { localStorage.setItem('materialsFilter', JSON.stringify(selected)); } catch (e) {}
-                renderFilteredSorted();
-            });
-            priceMinInput.addEventListener('input', function() {
-                localStorage.setItem('priceMin', priceMinInput.value);
-                if (priceMinInput.value !== '') priceMinRange.value = Math.max(0, Math.min(1000, Math.floor(Number(priceMinInput.value) || 0)));
-                renderFilteredSorted();
-            });
-            priceMaxInput.addEventListener('input', function() {
-                localStorage.setItem('priceMax', priceMaxInput.value);
-                if (priceMaxInput.value !== '') priceMaxRange.value = Math.max(0, Math.min(1000, Math.ceil(Number(priceMaxInput.value) || 0)));
-                renderFilteredSorted();
-            });
-            priceMinRange.addEventListener('input', function(){
-                const v = Number(priceMinRange.value);
-                if (v > Number(priceMaxRange.value)) priceMaxRange.value = v;
-                priceMinInput.value = String(v);
-                localStorage.setItem('priceMin', priceMinInput.value);
-                renderFilteredSorted();
-            });
-            priceMaxRange.addEventListener('input', function(){
-                const v = Number(priceMaxRange.value);
-                if (v < Number(priceMinRange.value)) priceMinRange.value = v;
-                priceMaxInput.value = String(v);
-                localStorage.setItem('priceMax', priceMaxInput.value);
-                renderFilteredSorted();
-            });
-            // 顶栏交互
-            toggleFilterPanelBtn.addEventListener('click', function(){
-                const visible = filterPanel.style.display !== 'none';
-                filterPanel.style.display = visible ? 'none' : 'block';
-            });
-            exportCsvBtn.addEventListener('click', function() {
-                downloadText('products.csv', toCsv(lastRendered));
-            });
-            exportJsonBtn.addEventListener('click', function() {
-                downloadText('products.json', JSON.stringify(lastRendered, null, 2));
-            });
-            toggleThemeBtn.addEventListener('click', function() {
-                const dark = document.body.classList.toggle('theme-dark');
-                toggleThemeBtn.innerHTML = dark ? '<i class="fas fa-sun"></i>浅色模式' : '<i class="fas fa-moon"></i>深色模式';
-                localStorage.setItem('theme', dark ? 'dark' : 'light');
-            });
-            savePresetBtn.addEventListener('click', function(){
-                const name = prompt('为当前筛选保存一个预设名称：');
-                if (!name) return;
-                const preset = collectCurrentState();
-                const presets = readPresets();
-                presets[name] = preset;
-                writePresets(presets);
-                refreshPresetOptions(name);
-                alert('预设已保存');
-            });
-            deletePresetBtn.addEventListener('click', function(){
-                const name = presetSelect.value;
-                if (!name) { alert('请选择要删除的预设'); return; }
-                const presets = readPresets();
-                if (presets[name]) { delete presets[name]; writePresets(presets); refreshPresetOptions(); alert('预设已删除'); }
-            });
-            presetSelect.addEventListener('change', function(){
-                const name = presetSelect.value; if (!name) return;
-                const presets = readPresets(); const p = presets[name]; if (!p) return;
-                applyState(p);
-                currentPage = 1;
-                renderFilteredSorted();
-            });
-            resetFiltersBtn.addEventListener('click', function(){
-                searchInput.value = '';
-                sortSelect.value = 'default';
-                Array.from(materialsSelect.options).forEach(o => o.selected = false);
-                priceMinInput.value = '';
-                priceMaxInput.value = '';
-                priceMinRange.value = '0';
-                priceMaxRange.value = '1000';
-                infiniteCursor = 0;
-                renderFilteredSorted();
-            });
-            copyLinkBtn.addEventListener('click', function(){
-                const url = location.href;
-                navigator.clipboard?.writeText(url).then(() => alert('链接已复制')).catch(() => {
-                    // 回退
-                    const t = document.createElement('textarea'); t.value = url; document.body.appendChild(t); t.select();
-                    try { document.execCommand('copy'); alert('链接已复制'); } catch (e) { alert('复制失败'); }
-                    document.body.removeChild(t);
-                });
-            });
-            
-            function generateProducts() {
-                const excelData = excelDataInput.value.trim();
->>>>>>> 2993d239eeeeedb4dbe8a5c5df854f62f5dd23b3
+				
                 if (!excelData) {
                     alert('请先粘贴Excel数据！');
                     return;
                 }
-<<<<<<< HEAD
                 
                 // 解析数据
                 const rows = excelData.split(/\r?\n/);
@@ -903,420 +511,14 @@ Q版娃娃系列金属徽章	48	金属	仿珐琅+局部闪粉+局部印刷	约45
                         productsContainer.appendChild(productCard);
                     });
                 } else {
-=======
-                try { localStorage.setItem('excelData', excelData); } catch (e) {}
-
-                allProducts = parseData(excelData);
-                populateMaterials(allProducts);
-                populateDimensions(allProducts);
-                renderFilteredSorted();
-            }
-
-            function renderFilteredSorted() {
-                const keyword = (searchInput.value || '').trim().toLowerCase();
-                try { localStorage.setItem('searchKeyword', keyword); } catch (e) {}
-                const sortKey = sortSelect.value;
-                const selectedMaterials = Array.from(materialsSelect.selectedOptions).map(o => o.value);
-                const selectedCrafts = Array.from(craftsSelect.selectedOptions).map(o => o.value);
-                const selectedSeries = Array.from(seriesSelect.selectedOptions).map(o => o.value);
-                const priceMin = Number(priceMinInput.value);
-                const priceMax = Number(priceMaxInput.value);
-                const filtered = keyword
-                    ? allProducts.filter(p =>
-                        (p.name || '').toLowerCase().includes(keyword) ||
-                        (p.material || '').toLowerCase().includes(keyword) ||
-                        (p.craft || '').toLowerCase().includes(keyword)
-                    )
-                    : allProducts.slice();
-
-                const afterMaterial = selectedMaterials.length === 0
-                    ? filtered
-                    : filtered.filter(p => selectedMaterials.includes((p.material || '').trim()));
-                const afterCraft = selectedCrafts.length === 0
-                    ? afterMaterial
-                    : afterMaterial.filter(p => selectedCrafts.includes((p.craft || '').trim()));
-                const afterSeries = selectedSeries.length === 0
-                    ? afterCraft
-                    : afterCraft.filter(p => selectedSeries.includes((p.series || '').trim()));
-
-                const afterPrice = afterSeries.filter(p => {
-                    const pr = safePrice(p.price);
-                    if (!isFinite(pr)) return false;
-                    if (!isNaN(priceMin) && String(priceMinInput.value).length > 0 && pr < priceMin) return false;
-                    if (!isNaN(priceMax) && String(priceMaxInput.value).length > 0 && pr > priceMax) return false;
-                    return true;
-                });
-
-                afterPrice.sort((a, b) => {
-                    if (sortKey === 'price-asc' || sortKey === 'price-desc') {
-                        const pa = safePrice(a.price);
-                        const pb = safePrice(b.price);
-                        return sortKey === 'price-asc' ? pa - pb : pb - pa;
-                    }
-                    if (sortKey === 'name-asc' || sortKey === 'name-desc') {
-                        const na = (a.name || '').localeCompare(b.name || '');
-                        return sortKey === 'name-asc' ? na : -na;
-                    }
-                    return 0;
-                });
-
-                lastRendered = afterPrice;
-                currentFiltered = afterPrice;
-                // 更新统计 & URL
-                const total = afterPrice.length;
-                resultCountEl.textContent = `共 ${total} 项`;
-                writeUrlState({
-                    q: keyword || undefined,
-                    sort: sortSelect.value !== 'default' ? sortSelect.value : undefined,
-                    materials: selectedMaterials.length ? selectedMaterials : undefined,
-                    crafts: selectedCrafts.length ? selectedCrafts : undefined,
-                    series: selectedSeries.length ? selectedSeries : undefined,
-                    min: String(priceMinInput.value || '') || undefined,
-                    max: String(priceMaxInput.value || '') || undefined,
-                    ps: pageSize !== 24 ? pageSize : undefined
-                });
-                infiniteCursor = 0;
-                renderNextBatch();
-            }
-
-            function parseData(text) {
-                const lines = text.split(/\r?\n/).filter(l => l.trim().length > 0);
-                if (lines.length <= 1) return [];
-                // 判断分隔符（优先制表符）
-                const delimiter = lines[0].includes('\t') ? '\t' : ',';
-                const products = [];
-                for (let i = 1; i < lines.length; i++) {
-                    const row = lines[i];
-                    const cells = delimiter === '\t' ? row.split('\t') : smartCsvSplit(row);
-                    if (cells.length < 6) continue;
-                    const [name, price, material, craft, size, image] = cells.map(s => (s || '').trim());
-                    // 通过名称推断系列（示例：取第一个空格或系列关键字前缀）
-                    const series = guessSeries(name);
-                    if (!name || !image) continue;
-                    products.push({ name, price, material, craft, size, image, series });
-                }
-                return products;
-            }
-
-            function populateMaterials(products) {
-                const unique = Array.from(new Set(products.map(p => (p.material || '').trim()).filter(Boolean))).sort((a, b) => a.localeCompare(b));
-                const saved = JSON.parse(materialsSelect.dataset.pending || '[]');
-                materialsSelect.innerHTML = '';
-                unique.forEach(m => {
-                    const opt = document.createElement('option');
-                    opt.value = m; opt.textContent = m;
-                    if (saved.includes(m)) opt.selected = true;
-                    materialsSelect.appendChild(opt);
-                });
-                try { delete materialsSelect.dataset.pending; } catch (e) {}
-            }
-
-            function smartCsvSplit(row) {
-                // 简易CSV分割：支持双引号包裹
-                const result = [];
-                let current = '';
-                let inQuotes = false;
-                for (let i = 0; i < row.length; i++) {
-                    const ch = row[i];
-                    if (ch === '"') {
-                        if (inQuotes && row[i + 1] === '"') { current += '"'; i++; }
-                        else { inQuotes = !inQuotes; }
-                    } else if (ch === ',' && !inQuotes) {
-                        result.push(current);
-                        current = '';
-                    } else {
-                        current += ch;
-                    }
-                }
-                result.push(current);
-                return result;
-            }
-
-            function safePrice(p) {
-                const n = Number(String(p).replace(/[^0-9.\-]/g, ''));
-                return isNaN(n) ? Number.POSITIVE_INFINITY : n;
-            }
-
-            function formatPrice(p) {
-                const n = Number(String(p).replace(/[^0-9.\-]/g, ''));
-                if (isNaN(n)) return String(p || '');
-                try {
-                    return new Intl.NumberFormat('zh-CN', { style: 'currency', currency: 'CNY', maximumFractionDigits: 2 }).format(n);
-                } catch (e) {
-                    return '¥ ' + n.toFixed(2);
-                }
-            }
-
-            function renderProducts(products) {
-                productsContainer.innerHTML = '';
-                if (!products || products.length === 0) {
->>>>>>> 2993d239eeeeedb4dbe8a5c5df854f62f5dd23b3
                     productsContainer.innerHTML = `
                         <div class="placeholder" style="text-align: center; grid-column: 1 / -1; padding: 40px; color: #e84118;">
                             <i class="fas fa-exclamation-triangle" style="font-size: 48px; margin-bottom: 15px;"></i>
                             <p>未能解析出有效数据，请检查数据格式</p>
                         </div>
                     `;
-<<<<<<< HEAD
                 }
             }
-=======
-                    return;
-                }
-                    products.forEach(product => {
-                        const productCard = document.createElement('div');
-                        productCard.className = 'product-card';
-                    const fallback = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%2399a' font-size='16'%3E图片加载失败%3C/text%3E%3C/svg%3E";
-                        productCard.innerHTML = `
-                            <div class="product-image">
-                                <img class="product-img" loading="lazy" src="img/${product.image}" alt="${escapeHtml(product.name)}" onerror="this.onerror=null;this.src='${fallback}';">
-                            </div>
-                            <div class="product-info">
-                                <h2 class="product-name">${escapeHtml(product.name)}</h2>
-                                <div class="product-price">${formatPrice(product.price)}</div>
-                                <div class="product-details">
-                                    <div class="detail-item">
-                                        <span class="detail-label">材质:</span>
-                                        <span class="detail-value">${escapeHtml(product.material)}</span>
-                                    </div>
-                                    <div class="detail-item">
-                                        <span class="detail-label">工艺:</span>
-                                        <span class="detail-value">${escapeHtml(product.craft)}</span>
-                                    </div>
-                                    <div class="detail-item">
-                                        <span class="detail-label">尺寸:</span>
-                                        <span class="detail-value">${escapeHtml(product.size)}</span>
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                    // 图片灯箱
-                    const img = productCard.querySelector('.product-img');
-                    img.style.cursor = 'zoom-in';
-                    img.addEventListener('click', function() {
-                        openLightbox(`img/${product.image}`, product.name);
-                    });
-                    productsContainer.appendChild(productCard);
-                });
-            }
-
-            function escapeHtml(str) {
-                return String(str || '')
-                    .replaceAll('&', '&amp;')
-                    .replaceAll('<', '&lt;')
-                    .replaceAll('>', '&gt;')
-                    .replaceAll('"', '&quot;')
-                    .replaceAll("'", '&#39;');
-            }
-
-            function toCsv(rows) {
-                const header = ['name','price','material','craft','series','size','image'];
-                const esc = v => '"' + String(v == null ? '' : v).replaceAll('"','""') + '"';
-                const lines = [header.join(',')].concat(rows.map(r => [r.name,r.price,r.material,r.craft,r.series,r.size,r.image].map(esc).join(',')));
-                return lines.join('\r\n');
-            }
-
-            function downloadText(filename, text) {
-                const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url; a.download = filename; a.click();
-                setTimeout(() => URL.revokeObjectURL(url), 2000);
-            }
-
-            // 简易灯箱
-            function openLightbox(src, alt) {
-                let overlay = document.getElementById('lightbox-overlay');
-                if (!overlay) {
-                    overlay = document.createElement('div');
-                    overlay.id = 'lightbox-overlay';
-                    overlay.style.position = 'fixed';
-                    overlay.style.inset = '0';
-                    overlay.style.background = 'rgba(0,0,0,0.8)';
-                    overlay.style.display = 'flex';
-                    overlay.style.alignItems = 'center';
-                    overlay.style.justifyContent = 'center';
-                    overlay.style.zIndex = '9999';
-                    overlay.innerHTML = `
-                        <div id="lightbox-content" style="max-width:90vw;max-height:90vh;position:relative;">
-                            <img id="lightbox-img" src="" alt="" style="max-width:100%;max-height:90vh;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,0.5);" />
-                            <button id="lightbox-close" aria-label="关闭" style="position:absolute;top:-14px;right:-14px;background:#fff;border:none;border-radius:999px;width:36px;height:36px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,0.3)"><i class="fas fa-times"></i></button>
-                        </div>`;
-                    document.body.appendChild(overlay);
-                    overlay.addEventListener('click', function(e){ if(e.target===overlay) closeLightbox(); });
-                    document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
-                }
-                const img = document.getElementById('lightbox-img');
-                img.src = src; img.alt = alt || '';
-                overlay.style.display = 'flex';
-                function closeLightbox(){ overlay.style.display = 'none'; }
-            }
-
-            // URL 同步
-            function readUrlState() {
-                const p = new URLSearchParams(location.search);
-                const materialsParam = p.getAll('m');
-                const craftsParam = p.getAll('c');
-                const seriesParam = p.getAll('s');
-                return {
-                    q: p.get('q') || undefined,
-                    sort: p.get('sort') || undefined,
-                    min: p.get('min') || undefined,
-                    max: p.get('max') || undefined,
-                    ps: p.get('ps') || undefined,
-                    materials: materialsParam.length ? materialsParam : undefined,
-                    crafts: craftsParam.length ? craftsParam : undefined,
-                    series: seriesParam.length ? seriesParam : undefined
-                };
-            }
-
-            function writeUrlState(state) {
-                const sp = new URLSearchParams();
-                if (state.q) sp.set('q', state.q);
-                if (state.sort) sp.set('sort', state.sort);
-                if (state.min) sp.set('min', state.min);
-                if (state.max) sp.set('max', state.max);
-                if (state.ps) sp.set('ps', String(state.ps));
-                if (state.materials && state.materials.length) {
-                    state.materials.forEach(m => sp.append('m', m));
-                }
-                if (state.crafts && state.crafts.length) {
-                    state.crafts.forEach(c => sp.append('c', c));
-                }
-                if (state.series && state.series.length) {
-                    state.series.forEach(s => sp.append('s', s));
-                }
-                const newUrl = location.pathname + (sp.toString() ? ('?' + sp.toString()) : '');
-                history.replaceState(null, '', newUrl);
-            }
-
-            // 预设存取
-            function readPresets(){
-                try { return JSON.parse(localStorage.getItem('filterPresets') || '{}'); } catch (e) { return {}; }
-            }
-            function writePresets(obj){
-                try { localStorage.setItem('filterPresets', JSON.stringify(obj)); } catch (e) {}
-            }
-            function refreshPresetOptions(selectName){
-                const presets = readPresets();
-                const entries = Object.keys(presets).sort();
-                presetSelect.innerHTML = '<option value="">加载预设…</option>' + entries.map(n => `<option value="${escapeHtml(n)}">${escapeHtml(n)}</option>`).join('');
-                if (selectName && entries.includes(selectName)) presetSelect.value = selectName;
-            }
-            function collectCurrentState(){
-                return {
-                    q: (searchInput.value || ''),
-                    sort: (sortSelect.value || 'default'),
-                    materials: Array.from(materialsSelect.selectedOptions).map(o => o.value),
-                    crafts: Array.from(craftsSelect.selectedOptions).map(o => o.value),
-                    series: Array.from(seriesSelect.selectedOptions).map(o => o.value),
-                    min: (priceMinInput.value || ''),
-                    max: (priceMaxInput.value || ''),
-                    ps: pageSize
-                };
-            }
-            function applyState(s){
-                searchInput.value = s.q || '';
-                sortSelect.value = s.sort || 'default';
-                Array.from(materialsSelect.options).forEach(o => { o.selected = (s.materials || []).includes(o.value); });
-                Array.from(craftsSelect.options).forEach(o => { o.selected = (s.crafts || []).includes(o.value); });
-                Array.from(seriesSelect.options).forEach(o => { o.selected = (s.series || []).includes(o.value); });
-                priceMinInput.value = s.min || '';
-                priceMaxInput.value = s.max || '';
-                pageSize = Number(s.ps || 24);
-                if (![12,24,48,96].includes(pageSize)) pageSize = 24;
-                // 同步滑块
-                const minV = Number(priceMinInput.value || 0), maxV = Number(priceMaxInput.value || 1000);
-                priceMinRange.value = isNaN(minV) ? 0 : Math.max(0, Math.min(1000, Math.floor(minV)));
-                priceMaxRange.value = isNaN(maxV) ? 1000 : Math.max(0, Math.min(1000, Math.ceil(maxV)));
-            }
-
-            // 工艺/系列选项填充
-            function populateDimensions(products) {
-                const crafts = Array.from(new Set(products.map(p => (p.craft || '').trim()).filter(Boolean))).sort((a, b) => a.localeCompare(b));
-                const series = Array.from(new Set(products.map(p => (p.series || '').trim()).filter(Boolean))).sort((a, b) => a.localeCompare(b));
-                const craftSaved = readArray(localStorage.getItem('craftsFilter'));
-                const seriesSaved = readArray(localStorage.getItem('seriesFilter'));
-                craftsSelect.innerHTML = crafts.map(v => `<option value="${escapeHtml(v)}" ${craftSaved.includes(v) ? 'selected' : ''}>${escapeHtml(v)}</option>`).join('');
-                seriesSelect.innerHTML = series.map(v => `<option value="${escapeHtml(v)}" ${seriesSaved.includes(v) ? 'selected' : ''}>${escapeHtml(v)}</option>`).join('');
-            }
-            function readArray(json) { try { const r = JSON.parse(json || '[]'); return Array.isArray(r) ? r : []; } catch(e){ return []; } }
-
-            craftsSelect.addEventListener('change', function(){
-                const selected = Array.from(craftsSelect.selectedOptions).map(o => o.value);
-                try { localStorage.setItem('craftsFilter', JSON.stringify(selected)); } catch (e) {}
-                renderFilteredSorted();
-            });
-            seriesSelect.addEventListener('change', function(){
-                const selected = Array.from(seriesSelect.selectedOptions).map(o => o.value);
-                try { localStorage.setItem('seriesFilter', JSON.stringify(selected)); } catch (e) {}
-                renderFilteredSorted();
-            });
-
-            function guessSeries(name) {
-                const n = String(name || '');
-                const known = ['星铁LIVE','宇宙糖果屋','帕姆展览馆','与你同行的回忆','光锥','立绘','翁法罗斯英雄纪'];
-                for (const k of known) { if (n.includes(k)) return k; }
-                // fallback: 第一个空格前的词
-                const firstSpace = n.indexOf(' ');
-                if (firstSpace > 0) return n.slice(0, firstSpace);
-                return '';
-            }
-
-            // 无限滚动
-            function renderNextBatch() {
-                const batch = currentFiltered.slice(infiniteCursor, infiniteCursor + pageSize);
-                if (infiniteCursor === 0) productsContainer.innerHTML = '';
-                if (batch.length === 0) return;
-                const frag = document.createDocumentFragment();
-                batch.forEach(product => {
-                    const productCard = document.createElement('div');
-                    productCard.className = 'product-card';
-                    const fallback = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%2399a' font-size='16'%3E图片加载失败%3C/text%3E%3C/svg%3E";
-                    productCard.innerHTML = `
-                            <div class="product-image">
-                                <img class="product-img" loading="lazy" src="img/${product.image}" alt="${escapeHtml(product.name)}" onerror="this.onerror=null;this.src='${fallback}';">
-                            </div>
-                            <div class="product-info">
-                                <h2 class="product-name">${escapeHtml(product.name)}</h2>
-                                <div class="product-price">${formatPrice(product.price)}</div>
-                                <div class="product-details">
-                                    <div class="detail-item">
-                                        <span class="detail-label">材质:</span>
-                                        <span class="detail-value">${escapeHtml(product.material)}</span>
-                                    </div>
-                                    <div class="detail-item">
-                                        <span class="detail-label">工艺:</span>
-                                        <span class="detail-value">${escapeHtml(product.craft)}</span>
-                                    </div>
-                                    <div class="detail-item">
-                                        <span class="detail-label">系列:</span>
-                                        <span class="detail-value">${escapeHtml(product.series)}</span>
-                                    </div>
-                                    <div class="detail-item">
-                                        <span class="detail-label">尺寸:</span>
-                                        <span class="detail-value">${escapeHtml(product.size)}</span>
-                                    </div>
-                                </div>
-                        </div>
-                    `;
-                    const img = productCard.querySelector('.product-img');
-                    img.style.cursor = 'zoom-in';
-                    img.addEventListener('click', function() { openLightbox(`img/${product.image}`, product.name); });
-                    frag.appendChild(productCard);
-                });
-                productsContainer.appendChild(frag);
-                infiniteCursor += batch.length;
-            }
-
-            const sentinel = document.createElement('div');
-            sentinel.id = 'infinite-sentinel';
-            productsContainer.after(sentinel);
-            const io = new IntersectionObserver(entries => {
-                if (entries.some(e => e.isIntersecting)) renderNextBatch();
-            }, { rootMargin: '200px' });
-            io.observe(sentinel);
->>>>>>> 2993d239eeeeedb4dbe8a5c5df854f62f5dd23b3
         });
     </script>
 </body>
